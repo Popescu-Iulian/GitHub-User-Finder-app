@@ -55,7 +55,7 @@ class DisplayProfile {
         <div>
           <div>
             <img src="${user.avatar_url}" alt="" />
-            <a href="${user.html_url}">View Profile</a>
+            <button><a href="${user.html_url}">View Profile</a></button>
           </div>
           <div>
             <span>Public Repos: ${user.public_repos}</span>
