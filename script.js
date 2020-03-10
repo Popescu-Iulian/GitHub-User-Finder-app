@@ -51,28 +51,29 @@ class DisplayProfile {
   // Display user data
   displayUserProfile(user) {
     USER_PROFILE.innerHTML = `
-    <div>
-	<div>
-		<div>
-			<img src="${user.avarat_url}" alt="" />
-			<a href="${user.html_url}"></a>
-		</div>
-		<div>
-			<span>Public Repos: ${user.public_repos}</span>
-			<span>Public Gists: ${user.public_gists}</span>
-			<span>Followers: ${user.followers}</span>
-			<span>Following: ${user.following}</span>
-
-			<ul>
-				<li>Company:</li>
-				<li>Website/Blog:</li>
-				<li>Location:</li>
-				<li>Member since:</li>
-			</ul>
-		</div>
-	</div>
-</div>
-    `
+      <div>
+        <div>
+          <div>
+            <img src="${user.avatar_url}" alt="" />
+            <a href="${user.html_url}">View Profile</a>
+          </div>
+          <div>
+            <span>Public Repos: ${user.public_repos}</span>
+            <span>Public Gists: ${user.public_gists}</span>
+            <span>Followers: ${user.followers}</span>
+            <span>Following: ${user.following}</span>
+            <ul>
+              <li>Company: ${user.company}</li>
+              <li>Location: ${user.location}</li>
+              <li>Website/Blog: ${user.blog}</li>
+              <li>Member since: ${user.created_at}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Latest Repos</h3>
+      <div id="user-repos"></div>
+    `;
   }
 }
 
