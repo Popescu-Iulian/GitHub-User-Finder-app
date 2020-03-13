@@ -89,10 +89,10 @@ class DisplayGitHubProfile {
   }
 }
 
-// Initialise GitHubUser class
+// Initialise GitHubUser object
 const GITHUB_USER = new GetGitHubProfile;
 
-// Initialise DisplayProfile class
+// Initialise DisplayProfile object
 const DISPLAY_PROFILE = new DisplayGitHubProfile;
 
 // Event that trigger search and display
